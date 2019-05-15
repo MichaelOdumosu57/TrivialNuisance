@@ -1,17 +1,37 @@
+
+
+
 Organize
 
+dropbox username: postgreSDropbox
+
+SELECT TO_TIMESTAMP('2019-05-15 4:13:00','YYYY-MM-DD HH:MI:SS');
+
+Kevins table
+--------------------------------------------------------
 CREATE TABLE kevin (
     date            timestamp,
     media_link      varchar(1000),
     incident        varchar(150),         -- type of incident
-    description     varchar(1000),        -- what did the person do
+    description     varchar(1000)        -- what did the person do
 );
+
+
+ALTER TABLE kevin
+ADD COLUMN location varchar(200);
+
+ALTER TABLE kevin
+ADD COLUMN times int;
+--------------------------------------------------------
+
 
 
 
 --type of incident
     get this information from cops and courts the different types of incidents out there
 
+incidents
+    tripping over items
 Jose
 
 
@@ -20,5 +40,17 @@ Jose
 
 Kevin
 
+
+    INSERT INTO kevin (date, media_link,incident,description)
+        VALUES (
+        '2019-05-15 04:13:00-04', 'https://www.dropbox.com/home/rommate%20misteps/kevin?preview=20190515_041358.mp4',
+        'tripping over items',
+        'I tell kevin to stop placing his shoes in the corridor I can trip over them
+            );
+
+
 I tell him that he should remove his shoes from the pathway I can trip over them at night
+
+
+
 
