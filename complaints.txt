@@ -5,7 +5,24 @@ Organize
 
 dropbox username: postgreSDropbox
 
-SELECT TO_TIMESTAMP('2019-05-15 4:13:00','YYYY-MM-DD HH:MI:SS');
+SELECT TO_TIMESTAMP('2019-05-08 16:26:00','YYYY-MM-DD HH:MI:SS');
+
+SELECT TO_TIMESTAMP('2019-05-22 04:37:00','YYYY-MM-DD HH:MI:SS');
+
+SELECT TO_TIMESTAMP('Sat Jun 08 2019 20:40:24 GMT-0400 (Eastern Daylight Time)','YYYY-MM-DD HH:MI:SS');
+
+schemes
+for every incident part
+A1.A2,B1,B2 and so own
+
+for whole incidents include a letter
+
+incident types
+
+tripping over items
+leaving place messy
+
+
 
 Kevins table
 --------------------------------------------------------
@@ -22,8 +39,77 @@ ADD COLUMN location varchar(200);
 
 ALTER TABLE kevin
 ADD COLUMN times int;
+
+ALTER TABLE kevin
+ADD COLUMN incident_part varchar(10);
+
+ALTER TABLE kevin
+ADD COLUMN  police_reports int;
+
+ALTER TABLE kevin
+ADD COLUMN police_reports int;
+
+ALTER TABLE kevin
+ADD COLUMN  relevant bool;
+
+ALTER TABLE kevin
+ADD COLUMN  incident_date timestamp;
 --------------------------------------------------------
 
+
+Jose table
+--------------------------------------------------------
+CREATE TABLE jose (
+    date            timestamp,
+    media_link      varchar(1000),
+    incident        varchar(150),         -- type of incident
+    incident_part   varchar(10),
+    description     varchar(1000),        -- what did the person do
+    location        varchar(200),
+    times               int
+    
+);
+
+ALTER TABLE jose
+ADD COLUMN  police_reports int primary key;
+
+ALTER TABLE jose
+ADD COLUMN  relevant bool;
+
+ALTER TABLE jose
+ADD COLUMN  incident_date timestamp;
+--------------------------------------------------------
+
+
+
+boths table
+--------------------------------------------------------
+CREATE TABLE boths (
+    
+) INHERITS (jose);
+-- meant for kevin and jose
+
+ALTER TABLE boths
+ADD COLUMN  police_reports int;
+
+ALTER TABLE boths
+ADD COLUMN  relevant bool;
+
+ALTER TABLE boths
+ADD COLUMN  incident_date timestamp;
+--------------------------------------------------------
+
+
+
+mailperson table
+--------------------------------------------------------
+CREATE TABLE mailperson (
+    
+) INHERITS (jose);
+
+ALTER TABLE mailperson
+ADD COLUMN  police_reports int primary key;
+--------------------------------------------------------
 
 
 
@@ -32,25 +118,100 @@ ADD COLUMN times int;
 
 incidents
     tripping over items
+    leaving place messy'
+    petty nuisnance
+
+date
+    this is the date I record the incident
+
 Jose
 
 
 
+for i in */; do zip -r "${i%/}.zip" "$i"; done
 
 
-Kevin
+
+    INSERT INTO boths (date,incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-06-08 20:39:00-04',
+        '2019-06-02 22:28:00-04',
+        'https://www.dropbox.com/home/rommate%20misteps/both?preview=20190602_222818.jpg',
+        'petty nuisnance',
+        'A',
+        'Someone cleaned out all but the stove part I used to make it seem like i never clean the stove',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );
 
 
-    INSERT INTO kevin (date, media_link,incident,description)
+
+    INSERT INTO boths (date, media_link,incident,incident_part,description,times)
+        VALUES (
+        '2019-05-08 04:26:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162620.jpg',
+        'leaving place messy',
+        'A',
+        'Someone left a finished toilet rool on the toilet flush throw it out ',
+        1
+    );
+
+
+    INSERT INTO mailperson (date, media_link,incident,incident_part,description,times)
+        VALUES (
+        '2019-05-22 04:37:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162620.jpg',
+        'leaving place messy',
+        'C',
+        'Someone left paper tissue on the toliet flush throw it out',
+        3
+    );
+
+
+    INSERT INTO kevin (date, media_link,incident,incident_part,description,times)
         VALUES (
         '2019-05-15 04:13:00-04', 'https://www.dropbox.com/home/rommate%20misteps/kevin?preview=20190515_041358.mp4',
         'tripping over items',
-        'I tell kevin to stop placing his shoes in the corridor I can trip over them
-            );
+        'I tell kevin to stop placing his shoes in the corridor I can trip over them, at night when I get home from work, the corrider was dark, I almost trip over them I have knee injury someone do something about this',
+        1
+    );
 
 
-I tell him that he should remove his shoes from the pathway I can trip over them at night
+    INSERT INTO kevin (date, media_link,incident,description,times)
+        VALUES (
+        '2019-05-15 04:13:00-04', 'https://www.dropbox.com/home/rommate%20misteps/kevin?preview=20190515_041358.mp4',
+        'tripping over items',
+        'I tell kevin to stop placing his shoes in the corridor I can trip over them, at night when I get home from work, the corrider was dark, I almost trip over them I have knee injury someone do something about this',
+        1
+    );
 
 
+    INSERT INTO boths (date, media_link,incident,incident_part,description,times)
+        VALUES (
+        '2019-05-08 04:26:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162620.jpg',
+        'leaving place messy',
+        'A',
+        'Someone left a finished toilet rool on the toilet flush throw it out ',
+        1
+    );
+
+
+
+    INSERT INTO boths (date, media_link,incident,incident_part,description,times)
+        VALUES (
+        '2019-05-08 04:28:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162824.jpg',
+        'leaving place messy',
+        'B',
+        'leaving plates in the microwave come on man ',
+        2
+    );
+
+
+    INSERT INTO boths (date, media_link,incident,incident_part,description,times)
+        VALUES (
+        '2019-05-08 04:26:00-04', 'https://www.dropbox.com/home/rommate%20misteps/both?preview=IMG_20190508_162620.jpg',
+        'leaving place messy',
+        'C',
+        'Someone left paper tissue on the toliet flush throw it out',
+        3
+    );
 
 

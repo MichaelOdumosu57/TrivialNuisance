@@ -1,0 +1,4 @@
+database management steps
+
+ALTER TABLE boths NO INHERIT jose;
+ALTER TABLE mailperson NO INHERIT jose;
