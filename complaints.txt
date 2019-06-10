@@ -1,3 +1,5 @@
+phrases:goes in the shower while not watching something
+        not in the mailbox
 
 
 
@@ -117,9 +119,10 @@ ADD COLUMN  police_reports int primary key;
     get this information from cops and courts the different types of incidents out there
 
 incidents
-    tripping over items
+    tripping over items,
     leaving place messy'
-    petty nuisnance
+    petty nuisnance,
+    not in the mailbox
 
 date
     this is the date I record the incident
@@ -129,6 +132,20 @@ Jose
 
 
 for i in */; do zip -r "${i%/}.zip" "$i"; done
+
+
+
+    INSERT INTO kevin (date,incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-06-10 03:13:30-04',
+        '2019-06-08 22:14:00-04',
+        'https://www.dropbox.com/home/rommate%20misteps/kevin?preview=20190610_030723.jpg',
+        'petty nuisnance',
+        'A',
+        'I told kevin to close the door, he never did and says I didnt lock it',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );
 
 
 
