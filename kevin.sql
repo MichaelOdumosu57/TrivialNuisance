@@ -37,3 +37,19 @@
         1,
         '234 Albany ave Brooklyn NY 11213'
     );
+    
+    
+    INSERT INTO kevin (date,incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-06-15 01:30:30-04',
+        '2019-06-13 22:48:00-04',
+        'https://www.dropbox.com/home/rommate%20misteps/kevin?preview=20190613_224808.jpg',
+        'tripping over items',
+        'A',
+        'I tell kevin to stop placing his shoes in the corridor I can trip over them, at night when I get home from work, the corrider was dark, I almost trip over them I have knee injury someone do something about this',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    
+    
