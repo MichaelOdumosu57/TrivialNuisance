@@ -130,8 +130,11 @@ date
 Jose
 
 
+for i in ls;
+do echo $i;
+done
 
-for i in */; do zip -r "${./backup/i%/}.zip" "$i" -x *node_modules*; done
+run test.sh
 rsync -rv /home/uoul/My_Computer/Database_Folder.zip ./
 
 
