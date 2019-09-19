@@ -30,4 +30,17 @@ leaving place messy
         );
         
         
+        INSERT INTO boths (date,incident_date, media_link,incident,incident_part,description,times,location)
+            VALUES (
+            '2019-09-19 03:01:30-04',
+            '2019-09-17 21:46:00-04',
+            '~/My_Computer/Projects/TrivialNuisance/media/project/2.mp4',
+            'leaving place messy',
+            'A',
+            'I get to the bathroom to see the toilet unflushed',
+            1,
+            '234 Albany ave Brooklyn NY 11213'
+        );
+        
+        
         

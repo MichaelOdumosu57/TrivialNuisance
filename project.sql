@@ -95,18 +95,79 @@ COMMIT;
     );
     COMMIT;
 
-   
-   
-    INSERT INTO project (date,actions_date, media_link,actions,actions_part,description,times,location)
+    INSERT INTO project  (date,actions_date, media_link,actions,actions_part,description,times,location)
         VALUES (
-        '2019-06-10 03:13:30-04',
-        '2019-05-30 23:06:00-04',
-        '~/My_Computer/Projects/TrivialNuisance/media/kevin/2.jpg',
-        'tripping over items',
+        '2019-09-15 12:16:30-04',
+        '2019-09-15 10:26:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/5.mp4',
+        'cleaning up bathroom',
         'A',
-        'I tell kevin to stop placing his shoes in the corridor I can trip over them, at night when I get home from work, the corrider was dark, I almost trip over them I have knee injury someone do something about this',
-        1,
+        'I take shower I properly clean the bathroom and show everything in this video',
+        2,
         '234 Albany ave Brooklyn NY 11213'
     );
     
     
+    
+    BEGIN;
+    INSERT INTO project  (date,actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-18 23:27:30-04',
+        '2019-09-18 21:27:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/6.mp4',
+        'properly closing front door',
+        'A',
+        'I properly close front door before leaving for work',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    INSERT INTO project  (date,actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-18 23:27:30-04',
+        '2019-09-18 11:40:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/7.mp4',
+        'properly closing front door',
+        'A',
+        'I properly close front door before leaving',
+        3,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    INSERT INTO project  (date,actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-18 23:27:30-04',
+        '2019-09-18 11:40:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/7.mp4',
+        'properly closing front door',
+        'A',
+        'I properly close front door before leaving',
+        3,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    INSERT INTO project  (date,actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-18 23:27:30-04',
+        '2019-09-18 11:40:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/8.mp4',
+        'properly closing front door',
+        'A',
+        'I properly close front door before leaving',
+        4,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    INSERT INTO project  (date,actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-18 23:27:30-04',
+        '2019-09-18 11:40:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/9.mp4',
+        'properly closing front door',
+        'A',
+        'I properly close front door before leaving',
+        5,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    COMMIT;
