@@ -3,6 +3,10 @@ Jose did not flush
 left these gloves on the toilet
 
 
+-- 'nonsense'
+-- 'leaving place messy'
+-- 'property damage'
+
     INSERT INTO jose (date,incident_date, media_link,incident,incident_part,description,times,location)
         VALUES (
         '2019-06-10 03:13:30-04',
@@ -28,3 +32,42 @@ left these gloves on the toilet
         '234 Albany ave Brooklyn NY 11213'
     );
     
+    
+    INSERT INTO jose (date,incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-21 15:05:30-04',
+        '2019-09-19 20:37:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/jose/3.jpeg',
+        'nonsense',
+        'A',
+        'wont let me see alfred camera',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+        
+        
+    BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN
+        
+    BEGIN;
+    INSERT INTO jose (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-22 07:05:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/jose/4.jpeg',
+        'leaving place messy',
+        'A',
+        'leaves cabinet open',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+
+    INSERT INTO jose (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-24 07:25:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/jose/5.jpeg',
+        'property damage',
+        'A',
+        'jose knows how to pick doors why is mine left like this',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    COMMIT;

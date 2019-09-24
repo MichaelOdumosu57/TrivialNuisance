@@ -44,3 +44,19 @@ leaving place messy
         
         
         
+         BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN
+        
+        
+        BEGIN;
+        INSERT INTO boths (incident_date, media_link,incident,incident_part,description,times,location)
+            VALUES (
+            '2019-09-22 08:40:00-04',
+            '~/My_Computer/Projects/TrivialNuisance/media/project/3.jpeg',
+            'leaving place messy',
+            'A',
+            'stain on toilet seat, and im bugged about items that dont even belong in the microwave',
+            1,
+            '234 Albany ave Brooklyn NY 11213'
+        );
+        COMMIT;
+        
