@@ -1,6 +1,8 @@
 
 
--- 'petty nuisance'
+-- 'nonsense'
+-- 'loud music'
+-- 'leaving place messy'
 
 
     INSERT INTO kevin (date,incident_date, media_link,incident,incident_part,description,times,location)
@@ -168,3 +170,50 @@
     );
     
     UPDATE  kevin SET incident = 'nonsense' WHERE media_link = '~/My_Computer/Projects/TrivialNuisance/media/kevin/1.jpeg';
+    
+    BEGIN;
+    INSERT INTO kevin (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-24 22:11:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/kevin/11.jpg',
+        'leaving place messy',
+        'A',
+        'Kevin leaves the sink drainer out the sinkhole',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+        
+        
+    INSERT INTO kevin (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-25 10:57:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/kevin/12.mp4',
+        'loud music',
+        'A',
+        'Kevin playing loud music from his room waking me up',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    
+    INSERT INTO kevin (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-25 21:37:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/kevin/13.jpeg',
+        'leaving place messy',
+        'A',
+        'Kevin leaves the sink drainer out the sinkhole',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+                
+    INSERT INTO kevin (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-25 22:26:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/kevin/14.jpeg',
+        'leaving place messy',
+        'A',
+        'Kevin leaves the sink drainer out the sinkhole',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    COMMIT;

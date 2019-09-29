@@ -423,4 +423,34 @@ COMMIT;
     );
     COMMIT;
     
+    BEGIN;
+    INSERT INTO project  (actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-24 9:57:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/30.mp4',
+        'cleaning up bathroom',
+        'A',
+        'I clean the mop with bleach and clean the bathroom after I shower',
+        8,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    COMMIT;
+    
+    
+    
+    BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN;
+    
+    BEGIN;
+    
+    INSERT INTO project  (actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-09-28 10:42:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/31.mp4',
+        'take out garbage',
+        'A',
+        'I take out the garbage',
+        8,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    COMMIT;
     
