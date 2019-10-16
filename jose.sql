@@ -71,3 +71,15 @@ left these gloves on the toilet
         '234 Albany ave Brooklyn NY 11213'
     );
     COMMIT;
+
+
+    INSERT INTO jose (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-24 21:10:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/jose/6.jpeg',
+        'nonsense',
+        'A',
+        'putting kitchen products in the bathroom, jose doesnt put things back where they belong',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );    

@@ -217,3 +217,16 @@
         '234 Albany ave Brooklyn NY 11213'
     );
     COMMIT;
+
+
+    BEGIN;
+    INSERT INTO kevin (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-10-15 21:33:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/kevin/15.jpeg',
+        'leaving place messy',
+        'A',
+        'Kevin ruins kitchen stove with his food ',
+        1,
+        '234 Albany ave Brooklyn NY 11213'
+    );    
