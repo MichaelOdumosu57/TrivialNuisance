@@ -83,3 +83,29 @@ left these gloves on the toilet
         2,
         '234 Albany ave Brooklyn NY 11213'
     );    
+
+    BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN
+
+    BEGIN;
+    INSERT INTO jose (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-09-24 21:10:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/jose/7.jpeg',
+        'leaving place messy',
+        'A',
+        'cigerette dust in bathroom',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );        
+
+    INSERT INTO jose (incident_date, media_link,incident,incident_part,description,times,location)
+        VALUES (
+        '2019-10-20 05:10:00-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/jose/8.jpeg',
+        'nonsense',
+        'A',
+        'places bucket in middle of the room does not put it back',
+        2,
+        '234 Albany ave Brooklyn NY 11213'
+    );         
+    COMMIT;

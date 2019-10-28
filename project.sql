@@ -454,3 +454,20 @@ COMMIT;
     );
     COMMIT;
     
+
+    BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN; BEGIN;    
+
+
+    BEGIN;    
+    INSERT INTO project  (actions_date, media_link,actions,actions_part,description,times,location)
+        VALUES (
+        '2019-10-23 22:42:30-04',
+        '~/My_Computer/Projects/TrivialNuisance/media/project/32.mp4',
+        'take out garbage',
+        'A',
+        'I take out the garbage',
+        8,
+        '234 Albany ave Brooklyn NY 11213'
+    );
+    COMMIT;
+        
